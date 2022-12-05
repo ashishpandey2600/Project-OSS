@@ -1,0 +1,299 @@
+
+.header {
+    padding: 2px;
+    text-align: left;
+    background: #291888;
+    color: white;
+    font-size: 15px;
+}
+hr {
+    background-color: rgba(128, 128, 128, 0);
+    border-style: none;
+    border-color: grey;
+    border-top-style: dotted;
+    width: 30%;
+    border-width: 5px;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 5.2rem;
+    color: #81c4ff;
+    text-decoration: underline #d84d80;
+}
+
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    
+    text-decoration-line: none;
+    font-weight: 900;
+    text-align: center;
+    
+}
+h3:hover{
+    color: rgb(220, 0, 121);
+}
+
+h4{
+    text-align-last: right;
+    padding-right: 100px;
+}
+ p{
+     font-size: larger;
+     text-align-last: center;
+ }
+nav {
+    position: relative;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 35px;
+    background-color: rgba(233, 229, 236, 0.596);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: .2em 2em;
+    float: right;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0;
+    padding: .2em .7em;
+}
+
+nav a {
+    width: 100%;
+    height: 100%;
+    color: rgb(54, 17, 219);
+    text-decoration: none;
+    font-family: Ubuntu;
+    font-size: 1.15em;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    transition: .25s ease-in-out;
+}
+
+nav a:hover {
+    color: rgb(220, 0, 121);
+}
+
+.nav-bg {
+    content: '';
+    position: absolute;
+    display: block;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: rgb(89, 77, 156);
+    transition: .45s ease-in-out;
+    
+}
+.bg-hidden {
+    top: -100%;
+    opacity: 0;
+}
+
+.bg-visible {
+    top: 0;
+    opacity: 1;
+}
+
+h1 {
+    text-align: center;
+    font-family: Ubuntu;
+    letter-spacing: 1px;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background: rgb(50, 50, 50);
+    background: url(Augmented-reality-tutorial-Augmented-reality-3D-models-Blippar.jpg) no-repeat 50% 50% fixed;
+    background-size: 100%;
+    overflow: hidden;
+}
+
+.hero h1 {
+    position: relative;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    padding: .1em;
+    font-size: 3em;
+    font-weight: lighter;
+    color: black;
+}
+.content-wrapper {
+    width: 80%;
+    height: 300px;
+    padding: 1em 10%;
+}
+
+.content-wrapper h1 {
+    margin: 0;
+    color: rgb(0, 22, 220);
+    animation-duration: 4s;
+    animation-name: slidein;
+
+}
+
+.content-wrapper p {
+    font-family: "Open Sans";
+    text-indent: 1.5em;
+}
+.column {
+    float: left;
+    width: 33%;
+    font-size: 1.5rem;
+    padding: 1px;
+  }
+.column h5 {
+    width: 95%;
+    padding: 1px;
+    font-family: "Open Sans";
+    font-weight: normal;
+    text-align: center;
+  }
+.softwares {
+  width: 50%;
+  float: left;
+    
+  }
+.roundcorner {
+    border-radius: 25px;
+}
+.softwares dl {
+    color: black;
+    font-size: 20px;
+
+    
+       
+}
+
+ /* @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+     animation-timing-function: linear;
+      
+    }
+
+  
+    75% {
+      font-size: 300%;
+      margin-left: 25%;
+      width: 150%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  } */
+  .hero2 {
+   width: 100%;
+   float: right;
+} 
+  
+.content-wrapper {
+  height: 100vh;
+ 
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+
+.typing-effect {
+  width: 80ch;
+  animation: typing 3s steps(30), blink .7s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0px solid;
+  font-family: monospace;
+  font-size:1em;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+
+
+
+.perspective-text {
+    color: white;
+    font-family: Arial;
+    font-size: 50px;
+    font-weight: 900;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+  }
+  
+  .perspective-line {
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  p {
+    margin: 0;
+    height: 50px;
+    line-height: 50px;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .perspective-line:nth-child(odd) {
+    transform: skew(0deg, 0deg) scaleY(0.667);
+  }
+  
+  .perspective-line:nth-child(even) {
+    transform: skew(0deg, 0deg) scaleY(1.337);
+  }
+  
+  .perspective-text:hover p {
+    transform: translate(0, -50px);
+  }
+  
+  .perspective-line:nth-child(1) {
+    left: 3px;
+  }
+  
+  .perspective-line:nth-child(2) {
+    left: 3px;
+    background: #f07e6e;
+  }
+  
+  .perspective-line:nth-child(3) {
+    left: 8px;
+    background: #84cdfa;
+  }
+  
+  .perspective-line:nth-child(4) {
+    left: 16px;
+    background: #5ad1cd;
+  }
+  
+  .perspective-line:nth-child(5) {
+    left: 45px;
+  }
+  
